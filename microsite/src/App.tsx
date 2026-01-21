@@ -1,3 +1,4 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Header } from './components/layout/Header';
 import { ChapterNav } from './components/layout/ChapterNav';
@@ -6,6 +7,7 @@ import { Chapter1Problem } from './components/chapters/Chapter1Problem';
 import { Chapter2Math } from './components/chapters/Chapter2Math';
 import { Chapter3Solution } from './components/chapters/Chapter3Solution';
 import { Chapter4Ask } from './components/chapters/Chapter4Ask';
+import { SourcesPage } from './components/pages/SourcesPage';
 import { generatePDF } from './components/pdf/generatePDF';
 
 function Hero() {
@@ -72,7 +74,7 @@ function Hero() {
           {[
             { value: '4-5×', label: 'Cost of conservative planning' },
             { value: '52%', label: 'Cost to double capacity' },
-            { value: '$590M', label: 'Savings at 2% rates' },
+            { value: '2%', label: 'Federal financing rate' },
             { value: '>99%', label: 'REA repayment rate' },
           ].map((stat, index) => (
             <motion.div
@@ -114,7 +116,7 @@ function Hero() {
   );
 }
 
-function App() {
+function HomePage() {
   return (
     <div className="bg-background">
       <Header />
@@ -130,6 +132,17 @@ function App() {
 
       <Footer />
     </div>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter basename="/Grid_For_Growth">
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/sources" element={<SourcesPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

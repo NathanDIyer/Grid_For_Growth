@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export function Footer() {
   return (
     <footer className="bg-slate-900 text-white py-16 px-6">
@@ -12,37 +14,15 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4">Documents</h4>
+            <h4 className="text-lg font-semibold mb-4">Documentation</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a
-                  href="https://github.com/NathanDIyer/Grid_For_Growth/blob/main/grids_for_growth.md"
+                <Link
+                  to="/sources"
                   className="text-slate-400 hover:text-white transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Policy Analysis
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/NathanDIyer/Grid_For_Growth/blob/main/grid_economics_analysis.md"
-                  className="text-slate-400 hover:text-white transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Economic Analysis
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/NathanDIyer/Grid_For_Growth/blob/main/appendix_sources.md"
-                  className="text-slate-400 hover:text-white transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
                 >
                   Sources & Fact-Check
-                </a>
+                </Link>
               </li>
               <li>
                 <a
