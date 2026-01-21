@@ -16,7 +16,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  href="https://github.com/nathaniyer/Grid_For_Growth/blob/main/grids_for_growth.md"
+                  href="https://github.com/NathanDIyer/Grid_For_Growth/blob/main/grids_for_growth.md"
                   className="text-slate-400 hover:text-white transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -26,7 +26,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://github.com/nathaniyer/Grid_For_Growth/blob/main/grid_economics_analysis.md"
+                  href="https://github.com/NathanDIyer/Grid_For_Growth/blob/main/grid_economics_analysis.md"
                   className="text-slate-400 hover:text-white transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -36,7 +36,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://github.com/nathaniyer/Grid_For_Growth/blob/main/appendix_sources.md"
+                  href="https://github.com/NathanDIyer/Grid_For_Growth/blob/main/appendix_sources.md"
                   className="text-slate-400 hover:text-white transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -46,7 +46,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://github.com/nathaniyer/Grid_For_Growth"
+                  href="https://github.com/NathanDIyer/Grid_For_Growth"
                   className="text-slate-400 hover:text-white transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
