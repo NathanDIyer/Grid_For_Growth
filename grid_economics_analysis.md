@@ -18,6 +18,8 @@ The economic case for building grid infrastructure with headroom rests on three 
 
 ### The Calculation
 
+*Illustrative example demonstrating how discount rates affect infrastructure investment decisions.*
+
 Consider a utility choosing between:
 - **Option A**: Build a 500kV line now for $1.3 billion
 - **Option B**: Build a 345kV line for $1.0 billion, then expand in Year 15 for $1.2 billion
@@ -37,7 +39,7 @@ The Rural Electrification Administration operated at 2-3%. At those rates, build
 
 ---
 
-## Figure 2: Economies of Scale (The Six-Tenths Rule)
+## Figure 2: Economies of Scale (Infrastructure Scaling Laws)
 
 ![Economies of Scale](fig2_economies_of_scale.png)
 
@@ -113,7 +115,7 @@ This is why interconnected grids can operate with lower reserve margins while ma
 
 ### System Cost Impact
 
-Studies of European and US grids show that strong interconnection reduces wholesale electricity costs by 15-25% through:
+Studies of European and US grids show that strong interconnection reduces wholesale electricity costs significantly—MISO estimates $3-4 billion in annual savings, while a University of Chicago study found roughly 5% production cost savings—through:
 - Access to lower-cost generation
 - Reduced reserve requirements
 - Better renewable integration
@@ -127,7 +129,7 @@ Studies of European and US grids show that strong interconnection reduces wholes
 
 ### The REA Model
 
-The Rural Electrification Administration (1935-1994) deployed roughly $57 billion (in 2020 dollars) in low-cost loans to electrify rural America.
+The Rural Electrification Administration (1935-1994) deployed roughly $57 billion in nominal cumulative loans (estimated $100-200 billion in today's dollars) to electrify rural America.
 
 **Key terms:**
 - Interest rate: 2% (fixed after 1944 Pace Act)
@@ -143,7 +145,7 @@ The Rural Electrification Administration (1935-1994) deployed roughly $57 billio
 
 | Country/Program | Cost of Capital | Grid Growth Rate | Model |
 |-----------------|-----------------|------------------|-------|
-| China (State Grid) | ~2.5% | 7%/year | State-directed |
+| China (State Grid) | ~2-3% (est.) | 7%/year | State-directed |
 | Germany (KfW) | ~3.5% | 2.5%/year | Public bank + private |
 | USA Current | ~7% | 1%/year | Private with regulation |
 | USA REA Era | 2% | 8%/year | Federal lending |
@@ -152,9 +154,9 @@ The Rural Electrification Administration (1935-1994) deployed roughly $57 billio
 
 ### China's Current Investment
 
-China's State Grid Corp is investing $574 billion (4 trillion yuan) over 2025-2030, a 40% increase from the prior five-year period. In 2025 alone:
+China's State Grid Corp is investing $574 billion (4 trillion yuan) over 2026-2030, a 40% increase from the prior five-year period. In 2025 alone:
 - $88 billion in transmission and distribution
-- 42 UHV lines operational (vs. 2 in the rest of the world combined)
+- 42 UHV lines operational (the vast majority of all UHV lines worldwide)
 
 This investment is state-directed and state-financed, enabling long-term planning without private return requirements.
 
@@ -165,6 +167,8 @@ This investment is state-directed and state-financed, enabling long-term plannin
 ![Cascading Costs](fig6_cascading_costs.png)
 
 ### The Distribution Transformer Example
+
+*This is an illustrative model demonstrating the cost dynamics of incremental vs. proactive investment.*
 
 Consider a distribution utility preparing for EV adoption. If they use 5-year planning horizons:
 
@@ -197,6 +201,8 @@ This is why the "prudent" approach of building conservatively can cost 4-5x as m
 ![Preparation Delta](fig7_preparation_delta.png)
 
 ### Tower Preparation Options
+
+*Illustrative cost indices demonstrating the economics of preparation. Actual costs vary by project.*
 
 When building a transmission tower, you can prepare for future expansion at modest upfront cost:
 

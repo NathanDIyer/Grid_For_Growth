@@ -2,13 +2,13 @@
 
 ## Electricity Growth Used to Make Things Cheaper
 
-For most of American history, electricity demand grew 7, 8, 10 percent per year. The postwar AC boom should have been impossible. Air conditioning is highly correlated across regions, distributed across millions of buildings, concentrated in the hottest hours of the hottest days. Terrible load factor. If anything was going to break the grid's economics, it was AC.
+From the 1920s through the 1960s, electricity demand grew 7, 8, 10 percent per year. The postwar AC boom should have been impossible. Air conditioning is highly correlated across regions, distributed across millions of buildings, concentrated in the hottest hours of the hottest days. Terrible load factor. If anything was going to break the grid's economics, it was AC.
 
 But through all of that growth, the real cost of electricity declined. The grid got bigger and cheaper at the same time.
 
 Why? A few things. Power plants got more efficient as they got bigger. Transmission moves more power for less cost per unit as it scales. There's a 6/10 rule for transformers, meaning scaling up doesn't scale costs proportionally. Losses fall as systems grow. Interconnection lets regions lean on each other for reliability, which reduces the backup everyone needs to maintain. You get learning by doing, workforce expertise deepens, capital markets gain confidence once you've proven you can do something.
 
-These dynamics haven't disappeared. The 6/10 rule still applies. Interconnection benefits still accrue. You can see it in the fastest-growing grids today. China is expanding electricity consumption at twice the American rate while costs fall. They build HVDC lines that move the equivalent of New York City's entire output 2,000 miles, and they finish construction in three years.
+These dynamics haven't disappeared. The 6/10 rule still applies. Interconnection benefits still accrue. You can see it in the fastest-growing grids today. China is expanding electricity consumption at seven times the American rate while costs fall. They build HVDC lines that move the equivalent of New York City's entire output 2,000 miles, and they finish construction in three years.
 
 Now, China has different institutions. State-owned utilities, different land acquisition, less environmental review. You can't copy-paste their outcomes into American institutions. But what China shows is that there's no physical or economic law requiring grid expansion to raise costs. The positive-sum dynamics are real. When American grid expansion creates cost pressures, that's telling us something about our market design and permitting structures, not about the underlying technology.
 

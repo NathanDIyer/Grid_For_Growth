@@ -12,8 +12,38 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4">Resources</h4>
+            <h4 className="text-lg font-semibold mb-4">Documents</h4>
             <ul className="space-y-2 text-sm">
+              <li>
+                <a
+                  href="https://github.com/nathaniyer/Grid_For_Growth/blob/main/grids_for_growth.md"
+                  className="text-slate-400 hover:text-white transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Policy Analysis
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/nathaniyer/Grid_For_Growth/blob/main/grid_economics_analysis.md"
+                  className="text-slate-400 hover:text-white transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Economic Analysis
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/nathaniyer/Grid_For_Growth/blob/main/appendix_sources.md"
+                  className="text-slate-400 hover:text-white transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Sources & Fact-Check
+                </a>
+              </li>
               <li>
                 <a
                   href="https://github.com/nathaniyer/Grid_For_Growth"
@@ -21,23 +51,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Full Analysis (GitHub)
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-slate-400 hover:text-white transition-colors"
-                >
-                  Download PDF Summary
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-slate-400 hover:text-white transition-colors"
-                >
-                  Data Sources
+                  GitHub Repository
                 </a>
               </li>
             </ul>
@@ -47,19 +61,34 @@ export function Footer() {
             <h4 className="text-lg font-semibold mb-4">Further Reading</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <span className="text-slate-400">
+                <a
+                  href="https://www.richmondfed.org/publications/research/econ_focus/2020/q1/economic_history"
+                  className="text-slate-400 hover:text-white transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Rural Electrification Administration History
-                </span>
+                </a>
               </li>
               <li>
-                <span className="text-slate-400">
-                  Six-Tenths Rule in Infrastructure Economics
-                </span>
+                <a
+                  href="https://www.osti.gov/servlets/purl/1893821"
+                  className="text-slate-400 hover:text-white transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Transformer Scaling Laws & Cost Analysis
+                </a>
               </li>
               <li>
-                <span className="text-slate-400">
+                <a
+                  href="https://rmi.org/pjms-speed-to-power-problem-and-how-to-fix-it/"
+                  className="text-slate-400 hover:text-white transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Grid Planning Best Practices
-                </span>
+                </a>
               </li>
             </ul>
           </div>
