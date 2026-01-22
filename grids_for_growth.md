@@ -106,7 +106,7 @@ Who do we want holding the risk if you're a little too aggressive? Who gets the 
 
 A Grids for Growth agenda has to include siting reform. Cheap capital doesn't help if you can't permit lines. But the economics of larger lines actually help here.
 
-Bigger lines move dramatically more value over approximately the same land footprint. A 500 kV line doesn't require twice the right-of-way of a 345 kV line, but it carries roughly twice the power. A double-circuit 765 kV line moves an order of magnitude more power than a single-circuit 345 kV line on a modestly wider corridor.
+Bigger lines move dramatically more value over approximately the same land footprint. A 500 kV line doesn't require twice the right-of-way of a 345 kV line, but it carries roughly twice the power. A 765 kV line carries roughly six times the power of a 345 kV line on a modestly wider corridor.
 
 This creates real headroom for landowner compensation. If the value flowing through a corridor is $50 million per year rather than $10 million, you can pay landowners more. You can offer royalty structures tied to throughput. You can make hosting transmission genuinely attractive rather than something to fight.
 

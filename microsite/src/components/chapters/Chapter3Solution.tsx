@@ -108,7 +108,7 @@ export function Chapter3Solution() {
         <ChartContainer
           title="Land Efficiency by Voltage"
           subtitle="Higher voltage backbones move more power through less corridor"
-          takeaway="Regional 500kV+ backbones use a fraction of the land while enabling 10× more growth"
+          takeaway="Regional 500kV+ backbones use a fraction of the land while enabling ~6× more growth"
         >
           <RightOfWayEfficiency />
         </ChartContainer>

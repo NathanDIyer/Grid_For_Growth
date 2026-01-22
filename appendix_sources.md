@@ -373,13 +373,14 @@ AEP explicitly states a 500 kV line with bundled conductors can deliver "only ab
 
 ---
 
-### Claim: 765 kV double circuit capacity ~4000 MW
+### Claim: 765 kV single circuit capacity ~2400 MW
 **Status: ACCURATE**
 
-Power Grid Corporation of India's 765 kV Double Circuit Vindhyachal-Varanasi transmission line enhanced inter-regional power transfer capacity by 4,200 MW.
+AEP states 765 kV lines can carry approximately 2400 MW over distances of ~300 miles (single circuit). For double circuit configurations, capacity roughly doubles to ~4000-4200 MW as demonstrated by Power Grid Corporation of India's 765 kV Double Circuit lines.
 
 **Sources:**
-- [Government of India Press Release](https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=1748809)
+- [AEP Transmission Facts](https://web.ecs.baylor.edu/faculty/grady/_13_EE392J_2_Spring11_AEP_Transmission_Facts.pdf)
+- [Government of India Press Release (double circuit reference)](https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=1748809)
 - [MISO Discussion of 765 kV](https://cdn.misoenergy.org/20230308%20PAC%20Item%2007%20Discussion%20of%20765%20kV%20and%20HVDC628088.pdf)
 
 ---
@@ -398,10 +399,10 @@ The claim of "roughly the same" ROW for "roughly twice the power" is substantive
 
 ---
 
-### Claim: 765 kV achieves 80% lower cost per MW vs 345 kV
+### Claim: 765 kV achieves ~67% lower cost per MW vs 345 kV
 **Status: ACCURATE**
 
-AEP analysis states 765 kV construction is "only 29% of the cost of 345-kV and 38% of the cost of 500 kV for equivalent power transfer capability" - a 71% reduction, close to the claimed 80%.
+For single circuit comparisons: 765 kV single circuit (~2400 MW) at ~$2B costs approximately $0.83M/MW, compared to 345 kV single circuit (400 MW) at $1B costing $2.5M/MW—a 67% reduction. AEP analysis states 765 kV construction is "only 29% of the cost of 345-kV" on a per-MW equivalent basis, suggesting even greater efficiency at scale.
 
 **Sources:**
 - [RETA/AEP Analysis](https://retasite.wordpress.com/wp-content/uploads/2013/07/reta-electric-transmission-america-power-line-costs.pdf)

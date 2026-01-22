@@ -34,7 +34,7 @@ export function SixTenthsRule() {
 
     const yCapacity = d3
       .scaleLinear()
-      .domain([0, 4500])
+      .domain([0, 3000])
       .range([height, 0]);
 
     const yCost = d3
@@ -189,7 +189,7 @@ export function SixTenthsRule() {
       .attr('class', 'text-sm')
       .attr('fill', CHART_COLORS.muted)
       .attr('opacity', 0)
-      .text('Higher voltage = 5x more efficient per dollar')
+      .text('Higher voltage = ~3× more efficient per dollar')
       .transition()
       .delay(2000)
       .duration(400)

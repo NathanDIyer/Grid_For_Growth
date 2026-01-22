@@ -26,12 +26,12 @@ export const VOLTAGE_ECONOMICS = {
     cost_per_mw: 1.39,
     label: '500kV'
   },
-  kv765_double: {
+  kv765: {
     voltage: 765,
-    capacity_mw: 4000,
+    capacity_mw: 2400,
     cost_b: 2.0,
-    cost_per_mw: 0.5,
-    label: '765kV (double)'
+    cost_per_mw: 0.83,
+    label: '765kV'
   },
 };
 

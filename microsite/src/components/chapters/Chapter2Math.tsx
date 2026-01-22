@@ -54,7 +54,7 @@ export function Chapter2Math() {
         <ChartContainer
           title="Voltage Class Economics"
           subtitle="Higher voltage transmission delivers dramatically more capacity per dollar"
-          takeaway="765kV double circuit: 10× the capacity at only 2× the cost of 345kV"
+          takeaway="765kV: ~6× the capacity at only ~2× the cost of 345kV"
         >
           <SixTenthsRule />
         </ChartContainer>

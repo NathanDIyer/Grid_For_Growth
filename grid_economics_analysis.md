@@ -66,9 +66,9 @@ So doubling capacity costs only 52% more, not 100% more.
 |-----------|---------------|----------------|---------------------|
 | 345 kV Single Circuit | 400 | 1.0 | 2.50 |
 | 500 kV Single Circuit | 900 | 1.25 | 1.39 |
-| 765 kV Double Circuit | 4000 | 2.0 | 0.50 |
+| 765 kV Single Circuit | 2400 | 2.0 | 0.83 |
 
-**Key insight**: The 765kV double circuit costs 2x as much as the 345kV line but delivers 10x the capacity. Cost per MW is 80% lower.
+**Key insight**: The 765kV single circuit costs ~2x as much as the 345kV line but delivers ~6x the capacity. Cost per MW is ~67% lower.
 
 ---
 

@@ -20,7 +20,7 @@ const leveragePoints = [
     number: '03',
     title: 'Right-Size Infrastructure',
     description: 'When the optimal build is 500kV but 345kV is easier to justify, a modest grant tips the decision. Build for the grid you need, not the minimum viable option.',
-    insight: '765kV delivers 10× the capacity of 345kV at only 2× the cost.',
+    insight: '765kV delivers ~6× the capacity of 345kV at only ~2× the cost.',
     color: 'grid'
   },
   {

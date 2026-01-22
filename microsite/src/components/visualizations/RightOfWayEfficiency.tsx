@@ -38,9 +38,9 @@ const voltageData = [
   },
   {
     voltage: '765kV',
-    capacity: 4000,
+    capacity: 2400,
     rowWidth: 200,
-    landPerMW: 0.05,
+    landPerMW: 0.083,
     color: 'bg-grid',
     textColor: 'text-grid'
   }
@@ -81,13 +81,13 @@ export function RightOfWayEfficiency() {
                 Higher Voltage = Less Land per MW
               </h4>
               <p className="text-slate-600">
-                A 765kV line uses <span className="font-bold text-grid">10× less land per MW</span> than 138kV.
+                A 765kV line uses <span className="font-bold text-grid">~6× less land per MW</span> than 138kV.
                 Building high-voltage backbones means moving more power through less corridor—reducing
                 environmental impact while serving entire regions.
               </p>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-grid">10×</div>
+              <div className="text-4xl font-bold text-grid">~6×</div>
               <div className="text-sm text-slate-500">land efficiency</div>
             </div>
           </div>

@@ -86,9 +86,9 @@ function CostOfCapitalChart() {
 // Chart: Economies of Scale
 function EconomiesOfScaleChart() {
   const voltageData = [
-    { type: '345 kV Single', capacity: 400, cost: 1.0, costPerMW: 2.50, width: 10 },
-    { type: '500 kV Single', capacity: 900, cost: 1.25, costPerMW: 1.39, width: 22.5 },
-    { type: '765 kV Double', capacity: 4000, cost: 2.0, costPerMW: 0.50, width: 100 },
+    { type: '345 kV Single', capacity: 400, cost: 1.0, costPerMW: 2.50, width: 30 },
+    { type: '500 kV Single', capacity: 900, cost: 1.25, costPerMW: 1.39, width: 55 },
+    { type: '765 kV Single', capacity: 2400, cost: 2.0, costPerMW: 0.83, width: 100 },
   ];
 
   return (
@@ -121,8 +121,8 @@ function EconomiesOfScaleChart() {
       </div>
       <div className="mt-6 p-4 bg-green-500/10 rounded-lg border border-green-500/30">
         <p className="text-green-300 text-sm">
-          <strong>765kV double circuit costs 2x as much</strong> as 345kV but delivers <strong>10x the capacity</strong>.
-          Cost per MW is <strong>80% lower</strong>.
+          <strong>765kV costs ~2x as much</strong> as 345kV but delivers <strong>~6x the capacity</strong>.
+          Cost per MW is <strong>~67% lower</strong>.
         </p>
       </div>
     </div>
