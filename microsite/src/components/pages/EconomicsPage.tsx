@@ -564,9 +564,9 @@ export function EconomicsPage() {
                 </p>
               </div>
               <div className="bg-slate-800/50 rounded-lg p-4">
-                <div className="text-electric-400 text-2xl font-bold mb-2">52%</div>
+                <div className="text-electric-400 text-2xl font-bold mb-2">68%</div>
                 <p className="text-sm text-slate-300">
-                  Doubling transmission capacity costs roughly 52% more, not 100% more.
+                  Doubling transmission capacity costs roughly 68% more, not 100% more.
                   Bigger infrastructure is cheaper per unit.
                 </p>
               </div>
@@ -595,9 +595,9 @@ export function EconomicsPage() {
             </KeyInsight>
           </Section>
 
-          <Section title="Economies of Scale (Infrastructure Scaling Laws)">
+          <Section title="Infrastructure Scaling Laws">
             <p className="text-slate-300 leading-relaxed mb-4">
-              Capital costs scale with capacity according to scaling laws. For transformers, costs scale with capacity
+              Capital costs scale with capacity according to power laws. DOE research shows transformer costs scale with capacity
               to the 0.75 power, meaning doubling capacity increases cost by approximately 68%, not 100%.
             </p>
             <div className="bg-slate-800/30 rounded-lg p-4 mb-6 font-mono text-sm">

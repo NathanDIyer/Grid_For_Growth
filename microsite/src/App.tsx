@@ -75,7 +75,7 @@ function Hero() {
         >
           {[
             { value: '4-5×', label: 'Cost of conservative planning' },
-            { value: '52%', label: 'Cost to double capacity' },
+            { value: '68%', label: 'Cost to double capacity' },
             { value: '2%', label: 'Federal financing rate' },
             { value: '>99%', label: 'REA repayment rate' },
           ].map((stat, index) => (

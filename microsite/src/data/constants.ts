@@ -7,7 +7,7 @@ export const COST_OF_CAPITAL = {
   crossover_point: 0.08,
 };
 
-// Voltage class economics (from six-tenths rule analysis)
+// Voltage class economics (from infrastructure scaling laws analysis)
 export const VOLTAGE_ECONOMICS = {
   kv345: {
     voltage: 345,

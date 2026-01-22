@@ -157,7 +157,7 @@ export function Chapter4Ask({ onDownloadPDF }: Chapter4AskProps) {
                 <div className="text-sm text-slate-600">Cost of conservative planning</div>
               </div>
               <div className="bg-white rounded-xl p-5 border border-slate-200 text-center">
-                <div className="text-2xl font-bold text-transmission mb-2">52%</div>
+                <div className="text-2xl font-bold text-transmission mb-2">68%</div>
                 <div className="text-sm text-slate-600">Cost to double capacity</div>
               </div>
               <div className="bg-white rounded-xl p-5 border border-slate-200 text-center">

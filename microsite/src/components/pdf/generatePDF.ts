@@ -70,7 +70,7 @@ export function generatePDF() {
   doc.setFontSize(10);
   doc.setTextColor(darkSlate);
   doc.setFont('helvetica', 'normal');
-  const mathText = 'The Six-Tenths Rule: doubling capacity costs ~52% more, not 100%. At federal 2% rates, building big now beats waiting and expanding later by $590M in NPV. The crossover point is ~6% cost of capital.';
+  const mathText = 'Infrastructure scaling laws: doubling capacity costs ~68% more, not 100% (costs scale as capacity^0.75). At federal 2% rates, building big now beats waiting and expanding later. The crossover point is ~6% cost of capital.';
   const mathLines = doc.splitTextToSize(mathText, contentWidth);
   doc.text(mathLines, margin, y);
   y += mathLines.length * 5 + 8;

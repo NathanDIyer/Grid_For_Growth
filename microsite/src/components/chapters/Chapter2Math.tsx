@@ -28,24 +28,24 @@ export function Chapter2Math() {
         {/* Key stat */}
         <ScrollReveal delay={0.1}>
           <StatCallout
-            value="52%"
-            label="Doubling capacity costs 52% more, not 100%"
+            value="68%"
+            label="Doubling capacity costs 68% more, not 100%"
             color="electric"
             size="large"
           />
         </ScrollReveal>
 
-        {/* Six-tenths rule explanation */}
+        {/* Scaling laws explanation */}
         <div className="prose-container my-20">
           <ScrollReveal>
             <h3 className="section-headline">
-              The Six-Tenths Rule
+              Infrastructure Scaling Laws
             </h3>
             <p className="section-body">
-              Infrastructure costs don't scale linearly with capacity. Thanks to the
-              six-tenths rule, doubling capacity costs only about 52% more
-              (2<sup>0.6</sup> ≈ 1.52). This fundamental engineering economics principle
-              means building bigger is almost always more efficient per unit of capacity.
+              Infrastructure costs don't scale linearly with capacity. DOE research shows
+              transformer costs scale with capacity to the 0.75 power—doubling capacity
+              costs only about 68% more (2<sup>0.75</sup> ≈ 1.68), not 100%. This fundamental
+              engineering economics principle means building bigger is more efficient per unit.
             </p>
           </ScrollReveal>
         </div>
@@ -63,12 +63,12 @@ export function Chapter2Math() {
         <ScrollReveal>
           <div className="prose-container my-16">
             <div className="bg-white rounded-2xl p-8 border border-slate-200 text-center">
-              <div className="text-sm text-slate-500 mb-4">The Six-Tenths Rule</div>
+              <div className="text-sm text-slate-500 mb-4">Infrastructure Scaling Law</div>
               <div className="text-3xl font-mono text-slate-800 mb-4">
-                Cost₂ = Cost₁ × (Capacity₂ / Capacity₁)<sup>0.6</sup>
+                Cost₂ = Cost₁ × (Capacity₂ / Capacity₁)<sup>0.75</sup>
               </div>
               <div className="text-slate-600">
-                Costs scale as the 0.6 power of capacity, not linearly
+                Costs scale as the 0.75 power of capacity, not linearly
               </div>
             </div>
           </div>
