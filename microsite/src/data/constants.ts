@@ -7,7 +7,10 @@ export const COST_OF_CAPITAL = {
   crossover_point: 0.08,
 };
 
-// Voltage class economics (from infrastructure scaling laws analysis)
+// Voltage class economics
+// Sources: MISO MTEP24 Cost Estimation Guide (2024), AEP 765kV Transmission Facts,
+// ERCOT 2024 Regional Transmission Plan. Capacity ratings per AEP for distances ~300mi.
+// Costs are illustrative for typical 300-mile projects including substations.
 export const VOLTAGE_ECONOMICS = {
   kv345: {
     voltage: 345,
@@ -41,16 +44,34 @@ export const NPV_SCENARIOS = {
   savings_at_federal_rate: 590, // $M
 };
 
-// Cascading costs of incremental expansion
+// Cascading costs of incremental expansion over 40-year transmission lifecycle
 export const CASCADING_COSTS = [
-  { year: 0, cost: 20, cumulative: 20 },
-  { year: 5, cost: 25, cumulative: 45 },
-  { year: 10, cost: 30, cumulative: 75 },
-  { year: 15, cost: 35, cumulative: 110 },
-  { year: 20, cost: 40, cumulative: 150 },
+  { year: 0, cost: 100, cumulative: 100 },
+  { year: 10, cost: 120, cumulative: 220 },
+  { year: 20, cost: 150, cumulative: 370 },
+  { year: 30, cost: 180, cumulative: 550 },
+  { year: 40, cost: 200, cumulative: 750 },
 ];
 
-export const PROACTIVE_COST = 35; // $M
+export const PROACTIVE_COST = 175; // $M - build with headroom upfront
+
+// Historical transmission construction (circuit miles per year)
+// Source: The Brattle Group, EEI, NERC data
+export const HISTORICAL_CONSTRUCTION = [
+  { year: 1960, miles: 5500 },
+  { year: 1965, miles: 7000 },
+  { year: 1970, miles: 9500 },
+  { year: 1975, miles: 7500 },
+  { year: 1980, miles: 6000 },
+  { year: 1985, miles: 4500 },
+  { year: 1990, miles: 2500 },
+  { year: 1995, miles: 1500 },
+  { year: 2000, miles: 1800 },
+  { year: 2005, miles: 2000 },
+  { year: 2010, miles: 3500 },
+  { year: 2015, miles: 4000 },
+  { year: 2020, miles: 3000 },
+];
 
 // Preparation delta leverage
 export const PREPARATION_DELTA = {

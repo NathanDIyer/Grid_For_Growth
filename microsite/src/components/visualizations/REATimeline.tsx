@@ -14,7 +14,7 @@ export function REATimeline() {
     const svg = d3.select(svgRef.current);
     svg.selectAll('*').remove();
 
-    const margin = { top: 40, right: 40, bottom: 60, left: 60 };
+    const margin = { top: 40, right: 40, bottom: 80, left: 80 };
     const width = 700 - margin.left - margin.right;
     const height = 350 - margin.top - margin.bottom;
 
@@ -70,7 +70,7 @@ export function REATimeline() {
 
     g.append('text')
       .attr('transform', 'rotate(-90)')
-      .attr('y', -45)
+      .attr('y', -60)
       .attr('x', -height / 2)
       .attr('text-anchor', 'middle')
       .attr('class', 'fill-slate-500 text-sm')
@@ -131,11 +131,12 @@ export function REATimeline() {
         .duration(300)
         .attr('r', 8);
 
-      // Percentage label
+      // Percentage label - offset first point to the right to avoid y-axis overlap
+      const xOffset = i === 0 ? 25 : 0;
       g.append('text')
-        .attr('x', x(d.year))
+        .attr('x', x(d.year) + xOffset)
         .attr('y', y(d.electrification_pct) - 20)
-        .attr('text-anchor', 'middle')
+        .attr('text-anchor', i === 0 ? 'start' : 'middle')
         .attr('class', 'text-lg font-bold')
         .attr('fill', CHART_COLORS.primary)
         .attr('opacity', 0)
@@ -149,7 +150,7 @@ export function REATimeline() {
       if (d.event) {
         g.append('text')
           .attr('x', x(d.year))
-          .attr('y', height + 40)
+          .attr('y', height + 55)
           .attr('text-anchor', 'middle')
           .attr('class', 'text-xs')
           .attr('fill', CHART_COLORS.muted)
@@ -162,12 +163,14 @@ export function REATimeline() {
       }
     });
 
-    // "20 years" annotation
+    // "20 years" annotation - positioned below the curve with white background
+    const annotationY = y(35); // Position below the 50% mark
+
     g.append('line')
       .attr('x1', x(1935))
       .attr('x2', x(1955))
-      .attr('y1', y(50))
-      .attr('y2', y(50))
+      .attr('y1', annotationY)
+      .attr('y2', annotationY)
       .attr('stroke', CHART_COLORS.secondary)
       .attr('stroke-width', 2)
       .attr('stroke-dasharray', '6,4')
@@ -177,9 +180,25 @@ export function REATimeline() {
       .duration(400)
       .attr('opacity', 1);
 
+    // White background rectangle for text
+    const textWidth = 220;
+    const textHeight = 24;
+    g.append('rect')
+      .attr('x', x(1945) - textWidth / 2)
+      .attr('y', annotationY + 6)
+      .attr('width', textWidth)
+      .attr('height', textHeight)
+      .attr('fill', 'white')
+      .attr('rx', 4)
+      .attr('opacity', 0)
+      .transition()
+      .delay(2200)
+      .duration(400)
+      .attr('opacity', 1);
+
     g.append('text')
       .attr('x', x(1945))
-      .attr('y', y(50) - 10)
+      .attr('y', annotationY + 22)
       .attr('text-anchor', 'middle')
       .attr('class', 'text-sm font-bold')
       .attr('fill', CHART_COLORS.secondary)

@@ -122,13 +122,21 @@ export function ReserveScaling() {
         variants={itemVariants}
         className="mt-8 text-center"
       >
-        <div className="inline-block bg-slate-50 rounded-xl px-8 py-4 border border-slate-200">
-          <div className="text-sm text-slate-500 mb-2">Reserve requirement scales as:</div>
-          <div className="text-2xl font-mono text-slate-700">
-            Reserve ∝ 1/√n
+        <div className="inline-block bg-gradient-to-br from-slate-50 to-white rounded-2xl px-10 py-6 border border-slate-200 shadow-sm">
+          <div className="text-sm font-medium text-electric uppercase tracking-wider mb-4">
+            Reserve Scaling Law
           </div>
-          <div className="text-sm text-slate-500 mt-2">
-            where n = number of interconnected regions
+          <div className="flex items-center justify-center gap-3 text-slate-800 mb-4">
+            <span className="text-3xl italic" style={{ fontFamily: 'Georgia, serif' }}>R</span>
+            <span className="text-2xl text-slate-400 mx-2">∝</span>
+            <div className="flex flex-col items-center">
+              <span className="text-2xl border-b-2 border-slate-400 px-3 pb-1">1</span>
+              <span className="text-2xl px-3 pt-1">√<span className="italic" style={{ fontFamily: 'Georgia, serif' }}>n</span></span>
+            </div>
+          </div>
+          <div className="text-slate-500 text-sm">
+            where <span className="italic" style={{ fontFamily: 'Georgia, serif' }}>R</span> = reserve requirement and{' '}
+            <span className="italic" style={{ fontFamily: 'Georgia, serif' }}>n</span> = interconnected regions
           </div>
         </div>
       </motion.div>

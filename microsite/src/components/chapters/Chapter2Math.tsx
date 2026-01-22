@@ -54,7 +54,7 @@ export function Chapter2Math() {
         <ChartContainer
           title="Voltage Class Economics"
           subtitle="Higher voltage transmission delivers dramatically more capacity per dollar"
-          takeaway="The 765kV option costs 5x less per MW than 345kV"
+          takeaway="765kV double circuit: 10× the capacity at only 2× the cost of 345kV"
         >
           <SixTenthsRule />
         </ChartContainer>
@@ -62,13 +62,29 @@ export function Chapter2Math() {
         {/* The formula */}
         <ScrollReveal>
           <div className="prose-container my-16">
-            <div className="bg-white rounded-2xl p-8 border border-slate-200 text-center">
-              <div className="text-sm text-slate-500 mb-4">Infrastructure Scaling Law</div>
-              <div className="text-3xl font-mono text-slate-800 mb-4">
-                Cost₂ = Cost₁ × (Capacity₂ / Capacity₁)<sup>0.75</sup>
+            <div className="bg-gradient-to-br from-slate-50 to-white rounded-2xl p-10 border border-slate-200 text-center shadow-sm">
+              <div className="text-sm font-medium text-electric uppercase tracking-wider mb-6">
+                Infrastructure Scaling Law
               </div>
-              <div className="text-slate-600">
-                Costs scale as the 0.75 power of capacity, not linearly
+              <div className="flex items-center justify-center gap-3 text-slate-800 mb-6">
+                <span className="text-3xl italic" style={{ fontFamily: 'Georgia, serif' }}>C</span>
+                <sub className="text-lg text-slate-600">2</sub>
+                <span className="text-2xl text-slate-400 mx-2">=</span>
+                <span className="text-3xl italic" style={{ fontFamily: 'Georgia, serif' }}>C</span>
+                <sub className="text-lg text-slate-600">1</sub>
+                <span className="text-2xl text-slate-400 mx-2">×</span>
+                <span className="text-2xl text-slate-600">(</span>
+                <div className="flex flex-col items-center mx-1">
+                  <span className="text-2xl italic border-b-2 border-slate-400 px-2" style={{ fontFamily: 'Georgia, serif' }}>S<sub className="text-base">2</sub></span>
+                  <span className="text-2xl italic px-2" style={{ fontFamily: 'Georgia, serif' }}>S<sub className="text-base">1</sub></span>
+                </div>
+                <span className="text-2xl text-slate-600">)</span>
+                <sup className="text-xl font-semibold text-electric -ml-1">0.75</sup>
+              </div>
+              <div className="text-slate-500 text-sm max-w-md mx-auto">
+                Where <span className="italic" style={{ fontFamily: 'Georgia, serif' }}>C</span> = cost and{' '}
+                <span className="italic" style={{ fontFamily: 'Georgia, serif' }}>S</span> = capacity.
+                Doubling capacity increases cost by only 68%, not 100%.
               </div>
             </div>
           </div>

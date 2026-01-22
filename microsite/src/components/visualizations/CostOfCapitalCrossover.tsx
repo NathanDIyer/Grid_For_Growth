@@ -144,7 +144,7 @@ export function CostOfCapitalCrossover() {
 
     g.append('text')
       .attr('x', crossoverX + 15)
-      .attr('y', crossoverY - 15)
+      .attr('y', crossoverY - 35)
       .attr('class', 'text-sm font-bold')
       .attr('fill', CHART_COLORS.primary)
       .attr('opacity', 0)
@@ -177,7 +177,7 @@ export function CostOfCapitalCrossover() {
       .attr('class', 'text-sm font-bold')
       .attr('fill', CHART_COLORS.primary)
       .attr('opacity', 0)
-      .text('Federal: 2%')
+      .text('Low-Cost: 2%')
       .transition()
       .delay(1900)
       .duration(300)

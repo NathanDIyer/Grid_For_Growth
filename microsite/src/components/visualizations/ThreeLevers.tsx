@@ -5,7 +5,7 @@ const levers = [
   {
     number: 1,
     title: 'Low-Cost Capital',
-    description: 'Federal lending at 2% vs private 8%',
+    description: 'Lending at 2% vs private 8%',
     impact: 'Changes optimal investment timing',
     icon: (
       <svg viewBox="0 0 24 24" className="w-8 h-8" fill="currentColor">
@@ -37,6 +37,18 @@ const levers = [
       </svg>
     ),
     color: 'grid'
+  },
+  {
+    number: 4,
+    title: 'Regional Planning',
+    description: '20-50 year regional backbone siting',
+    impact: 'Build once, grow for generations',
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-8 h-8" fill="currentColor">
+        <path d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z"/>
+      </svg>
+    ),
+    color: 'slate'
   }
 ];
 
@@ -58,6 +70,12 @@ const colorClasses = {
     border: 'border-grid',
     text: 'text-grid',
     icon: 'text-grid'
+  },
+  slate: {
+    bg: 'bg-slate-100',
+    border: 'border-slate-500',
+    text: 'text-slate-700',
+    icon: 'text-slate-600'
   }
 };
 
@@ -133,7 +151,7 @@ export function ThreeLevers() {
         className="mt-8 text-center"
       >
         <div className="inline-flex items-center gap-4 bg-slate-900 text-white rounded-2xl px-8 py-5">
-          <span className="text-slate-300">Combined federal leverage:</span>
+          <span className="text-slate-300">Combined leverage:</span>
           <span className="text-4xl font-bold text-transmission">3-5x</span>
           <span className="text-slate-300">return per dollar invested</span>
         </div>

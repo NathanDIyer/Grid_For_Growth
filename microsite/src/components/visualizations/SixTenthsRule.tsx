@@ -14,7 +14,7 @@ export function SixTenthsRule() {
     const svg = d3.select(svgRef.current);
     svg.selectAll('*').remove();
 
-    const margin = { top: 40, right: 100, bottom: 80, left: 80 };
+    const margin = { top: 40, right: 120, bottom: 80, left: 100 };
     const width = 700 - margin.left - margin.right;
     const height = 400 - margin.top - margin.bottom;
 
@@ -74,7 +74,7 @@ export function SixTenthsRule() {
 
     g.append('text')
       .attr('transform', 'rotate(-90)')
-      .attr('y', -60)
+      .attr('y', -75)
       .attr('x', -height / 2)
       .attr('text-anchor', 'middle')
       .attr('class', 'fill-slate-500 text-sm')
@@ -85,18 +85,19 @@ export function SixTenthsRule() {
       .attr('transform', `translate(${width}, 0)`)
       .call(
         d3.axisRight(yCost)
-          .tickFormat((d) => `$${d}/MW`)
+          .tickFormat((d) => `$${d}M/MW`)
+          .ticks(6)
       )
       .selectAll('text')
-      .attr('class', 'fill-slate-600 text-sm');
+      .attr('class', 'fill-transmission text-sm');
 
     g.append('text')
       .attr('transform', 'rotate(90)')
-      .attr('y', -width - 60)
+      .attr('y', -width - 95)
       .attr('x', height / 2)
       .attr('text-anchor', 'middle')
       .attr('class', 'fill-transmission text-sm')
-      .text('Cost per MW ($M)');
+      .text('Cost per MW');
 
     // Capacity bars
     voltageData.forEach((d, i) => {
@@ -164,10 +165,12 @@ export function SixTenthsRule() {
         .duration(300)
         .attr('r', 8);
 
-      // Cost label
+      // Cost label - position last one above the dot, others to the right
+      const isLast = i === voltageData.length - 1;
       g.append('text')
-        .attr('x', x(d.label)! + x.bandwidth() / 2 + 15)
-        .attr('y', yCost(d.cost_per_mw) + 5)
+        .attr('x', x(d.label)! + x.bandwidth() / 2 + (isLast ? 0 : 15))
+        .attr('y', yCost(d.cost_per_mw) + (isLast ? -20 : 5))
+        .attr('text-anchor', isLast ? 'middle' : 'start')
         .attr('class', 'text-sm font-bold')
         .attr('fill', CHART_COLORS.secondary)
         .attr('opacity', 0)
@@ -203,6 +206,9 @@ export function SixTenthsRule() {
       className="w-full"
     >
       <svg ref={svgRef} className="w-full h-auto" />
+      <p className="text-center text-xs text-slate-400 mt-3">
+        Sources: MISO MTEP24 Cost Estimation Guide, AEP 765kV Transmission Facts, ERCOT 2024 Regional Plan
+      </p>
     </motion.div>
   );
 }

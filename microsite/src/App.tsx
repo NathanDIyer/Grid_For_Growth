@@ -14,14 +14,17 @@ import { generatePDF } from './components/pdf/generatePDF';
 
 function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-slate-900 to-slate-800 text-white px-6 pt-20">
-      <div className="max-w-4xl mx-auto text-center">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-blue-950 via-slate-900 to-slate-800 text-white px-6 pt-20 relative overflow-hidden">
+      {/* Subtle American accent stripes */}
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-red-600 via-white to-blue-600 opacity-60" />
+
+      <div className="max-w-4xl mx-auto text-center relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <span className="inline-block px-4 py-2 bg-electric/20 text-electric-300 rounded-full text-sm font-medium mb-8">
+          <span className="inline-block px-4 py-2 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium mb-8 border border-blue-400/30">
             Economic Analysis
           </span>
         </motion.div>
@@ -33,7 +36,7 @@ function Hero() {
           className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
         >
           Grids for{' '}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-400 to-transmission">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-white to-blue-400">
             Growth
           </span>
         </motion.h1>
@@ -44,7 +47,7 @@ function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-xl md:text-2xl text-slate-300 mb-12 max-w-2xl mx-auto leading-relaxed"
         >
-          The economic case for proactive federal investment in electricity grid infrastructure.
+          The economic case for proactive American investment in electricity grid infrastructure.
         </motion.p>
 
         <motion.div
@@ -55,13 +58,13 @@ function Hero() {
         >
           <a
             href="#problem"
-            className="bg-electric hover:bg-electric-500 text-white px-8 py-4 rounded-xl font-semibold transition-colors text-lg"
+            className="bg-red-600 hover:bg-red-500 text-white px-8 py-4 rounded-xl font-semibold transition-colors text-lg shadow-lg shadow-red-900/30"
           >
             Read the Analysis
           </a>
           <button
             onClick={generatePDF}
-            className="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-semibold transition-colors text-lg"
+            className="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-semibold transition-colors text-lg border border-white/20"
           >
             Download Summary
           </button>
@@ -74,10 +77,10 @@ function Hero() {
           className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto"
         >
           {[
-            { value: '4-5×', label: 'Cost of conservative planning' },
-            { value: '68%', label: 'Cost to double capacity' },
-            { value: '2%', label: 'Federal financing rate' },
-            { value: '>99%', label: 'REA repayment rate' },
+            { value: '4-5×', label: 'Cost of conservative planning', color: 'text-red-400' },
+            { value: '68%', label: 'Cost to double capacity', color: 'text-white' },
+            { value: '2%', label: 'Federal financing rate', color: 'text-blue-400' },
+            { value: '>99%', label: 'REA repayment rate', color: 'text-red-400' },
           ].map((stat, index) => (
             <motion.div
               key={stat.label}
@@ -86,7 +89,7 @@ function Hero() {
               transition={{ duration: 0.5, delay: 0.8 + index * 0.1 }}
               className="text-center"
             >
-              <div className="text-2xl md:text-3xl font-bold text-electric-300 mb-1">
+              <div className={`text-2xl md:text-3xl font-bold ${stat.color} mb-1`}>
                 {stat.value}
               </div>
               <div className="text-sm text-slate-400">

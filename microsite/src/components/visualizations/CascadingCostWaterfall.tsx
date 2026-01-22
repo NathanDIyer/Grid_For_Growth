@@ -14,32 +14,34 @@ export function CascadingCostWaterfall() {
     const svg = d3.select(svgRef.current);
     svg.selectAll('*').remove();
 
-    const margin = { top: 40, right: 40, bottom: 60, left: 60 };
+    const margin = { top: 40, right: 40, bottom: 80, left: 70 };
     const width = 700 - margin.left - margin.right;
-    const height = 400 - margin.top - margin.bottom;
+    const height = 420 - margin.top - margin.bottom;
 
     const g = svg
-      .attr('viewBox', `0 0 700 400`)
+      .attr('viewBox', `0 0 700 420`)
       .append('g')
       .attr('transform', `translate(${margin.left},${margin.top})`);
+
+    const finalCost = CASCADING_COSTS[CASCADING_COSTS.length - 1].cumulative;
 
     // Scales
     const x = d3
       .scaleBand()
-      .domain(CASCADING_COSTS.map((d) => `Year ${d.year}`).concat(['Proactive']))
+      .domain(CASCADING_COSTS.map((d) => `Year ${d.year}`).concat(['Build with\nHeadroom']))
       .range([0, width])
-      .padding(0.3);
+      .padding(0.25);
 
     const y = d3
       .scaleLinear()
-      .domain([0, 160])
+      .domain([0, 800])
       .range([height, 0]);
 
     // Grid lines
     g.append('g')
       .attr('class', 'grid')
       .selectAll('line')
-      .data(y.ticks(5))
+      .data(y.ticks(8))
       .enter()
       .append('line')
       .attr('x1', 0)
@@ -50,11 +52,13 @@ export function CascadingCostWaterfall() {
       .attr('stroke-dasharray', '4,4');
 
     // X axis
-    g.append('g')
+    const xAxis = g.append('g')
       .attr('transform', `translate(0,${height})`)
-      .call(d3.axisBottom(x))
-      .selectAll('text')
-      .attr('class', 'fill-slate-600 text-sm');
+      .call(d3.axisBottom(x));
+
+    xAxis.selectAll('text')
+      .attr('class', 'fill-slate-600 text-sm')
+      .style('text-anchor', 'middle');
 
     // Y axis
     g.append('g')
@@ -65,11 +69,11 @@ export function CascadingCostWaterfall() {
     // Y axis label
     g.append('text')
       .attr('transform', 'rotate(-90)')
-      .attr('y', -50)
+      .attr('y', -55)
       .attr('x', -height / 2)
       .attr('text-anchor', 'middle')
       .attr('class', 'fill-slate-500 text-sm')
-      .text('Cost');
+      .text('Lifecycle Cost');
 
     // Cascading bars (incremental costs stacking)
     let cumulative = 0;
@@ -106,52 +110,53 @@ export function CascadingCostWaterfall() {
 
     // Cumulative total label
     g.append('text')
-      .attr('x', x('Year 20')! + x.bandwidth() / 2)
-      .attr('y', y(150) - 15)
+      .attr('x', x('Year 40')! + x.bandwidth() / 2)
+      .attr('y', y(finalCost) - 15)
       .attr('text-anchor', 'middle')
       .attr('class', 'text-lg font-bold')
       .attr('fill', CHART_COLORS.warning)
       .attr('opacity', 0)
-      .text('$150M total')
+      .text(`$${finalCost}M total`)
       .transition()
       .delay(1200)
       .duration(400)
       .attr('opacity', 1);
 
-    // Proactive bar
-    const proactiveBar = g.append('rect')
-      .attr('x', x('Proactive')!)
+    // Build with Headroom bar
+    const headroomBar = g.append('rect')
+      .attr('x', x('Build with\nHeadroom')!)
       .attr('width', x.bandwidth())
       .attr('y', height)
       .attr('height', 0)
       .attr('fill', CHART_COLORS.success)
       .attr('rx', 4);
 
-    proactiveBar.transition()
+    headroomBar.transition()
       .delay(1400)
       .duration(600)
       .attr('y', y(PROACTIVE_COST))
       .attr('height', height - y(PROACTIVE_COST));
 
-    // Proactive label
+    // Headroom label
     g.append('text')
-      .attr('x', x('Proactive')! + x.bandwidth() / 2)
+      .attr('x', x('Build with\nHeadroom')! + x.bandwidth() / 2)
       .attr('y', y(PROACTIVE_COST) - 15)
       .attr('text-anchor', 'middle')
       .attr('class', 'text-lg font-bold')
       .attr('fill', CHART_COLORS.success)
       .attr('opacity', 0)
-      .text('$35M')
+      .text(`$${PROACTIVE_COST}M`)
       .transition()
       .delay(1800)
       .duration(400)
       .attr('opacity', 1);
 
     // Savings annotation
-    const savingsY = y(90);
+    const savingsRatio = (finalCost / PROACTIVE_COST).toFixed(1);
+    const savingsY = y(400);
     g.append('line')
-      .attr('x1', x('Year 20')! + x.bandwidth() + 10)
-      .attr('x2', x('Proactive')! - 10)
+      .attr('x1', x('Year 40')! + x.bandwidth() + 10)
+      .attr('x2', x('Build with\nHeadroom')! - 10)
       .attr('y1', savingsY)
       .attr('y2', savingsY)
       .attr('stroke', CHART_COLORS.primary)
@@ -164,15 +169,29 @@ export function CascadingCostWaterfall() {
       .attr('opacity', 1);
 
     g.append('text')
-      .attr('x', (x('Year 20')! + x.bandwidth() + x('Proactive')!) / 2)
+      .attr('x', (x('Year 40')! + x.bandwidth() + x('Build with\nHeadroom')!) / 2)
       .attr('y', savingsY - 10)
       .attr('text-anchor', 'middle')
       .attr('class', 'text-sm font-semibold')
       .attr('fill', CHART_COLORS.primary)
       .attr('opacity', 0)
-      .text('4.3x savings')
+      .text(`${savingsRatio}× savings`)
       .transition()
       .delay(2200)
+      .duration(400)
+      .attr('opacity', 1);
+
+    // Timeline annotation
+    g.append('text')
+      .attr('x', width / 2 - 60)
+      .attr('y', height + 55)
+      .attr('text-anchor', 'middle')
+      .attr('class', 'text-xs')
+      .attr('fill', CHART_COLORS.muted)
+      .attr('opacity', 0)
+      .text('40-year transmission line lifecycle')
+      .transition()
+      .delay(2400)
       .duration(400)
       .attr('opacity', 1);
 

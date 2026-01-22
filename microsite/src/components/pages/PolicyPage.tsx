@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
@@ -13,6 +14,10 @@ function Section({ title, children, id }: { title: string; children: React.React
 }
 
 export function PolicyPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen bg-slate-900">
       {/* Header */}
@@ -239,7 +244,7 @@ export function PolicyPage() {
             </p>
           </Section>
 
-          <Section title="The Bet">
+          <Section title="Betting on Ourselves">
             <p className="text-slate-300 leading-relaxed mb-4">
               All of this amounts to a bet: that America will need a grid two or three times its current size over the next 50 years, driven by decarbonization, electrification, automation, AI, and technologies we haven't imagined. That bet may be wrong. But the asymmetry favors action.
             </p>
