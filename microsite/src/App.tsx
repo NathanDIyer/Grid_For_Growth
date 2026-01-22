@@ -8,6 +8,8 @@ import { Chapter2Math } from './components/chapters/Chapter2Math';
 import { Chapter3Solution } from './components/chapters/Chapter3Solution';
 import { Chapter4Ask } from './components/chapters/Chapter4Ask';
 import { SourcesPage } from './components/pages/SourcesPage';
+import { PolicyPage } from './components/pages/PolicyPage';
+import { EconomicsPage } from './components/pages/EconomicsPage';
 import { generatePDF } from './components/pdf/generatePDF';
 
 function Hero() {
@@ -140,6 +142,8 @@ function App() {
     <BrowserRouter basename="/Grid_For_Growth">
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/policy" element={<PolicyPage />} />
+        <Route path="/economics" element={<EconomicsPage />} />
         <Route path="/sources" element={<SourcesPage />} />
       </Routes>
     </BrowserRouter>

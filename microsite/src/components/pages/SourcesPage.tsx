@@ -9,7 +9,7 @@ interface SourceLink {
 
 interface Claim {
   claim: string;
-  status: 'verified' | 'verified-medium' | 'estimate' | 'illustrative';
+  status: 'verified' | 'estimate' | 'illustrative';
   statusLabel: string;
   evidence: string;
   sources: SourceLink[];
@@ -182,8 +182,8 @@ const claims: Record<string, Claim[]> = {
     },
     {
       claim: 'Geographic diversity reduces renewable variability 40-60%',
-      status: 'verified-medium',
-      statusLabel: 'Verified (Multiple Studies)',
+      status: 'verified',
+      statusLabel: 'Verified',
       evidence: 'LBL study found 10x10 array of PV plants shows "six times less" variability. European studies show 50% reduction at continental scale. Range is conservative.',
       sources: [
         { title: 'LBL - Implications of Wide-Area Geographic Diversity', url: 'https://emp.lbl.gov/publications/implications-wide-area-geographic' },
@@ -246,7 +246,6 @@ const illustrativeModels = [
 function StatusBadge({ status, label }: { status: Claim['status']; label: string }) {
   const colors = {
     verified: 'bg-green-500/20 text-green-300 border-green-500/30',
-    'verified-medium': 'bg-blue-500/20 text-blue-300 border-blue-500/30',
     estimate: 'bg-yellow-500/20 text-yellow-300 border-yellow-500/30',
     illustrative: 'bg-purple-500/20 text-purple-300 border-purple-500/30',
   };
@@ -292,6 +291,14 @@ export function SourcesPage() {
           <Link to="/" className="text-xl font-bold text-white hover:text-electric-400 transition-colors">
             ← Grids for Growth
           </Link>
+          <div className="flex gap-4 text-sm">
+            <Link to="/policy" className="text-slate-400 hover:text-white transition-colors">
+              Policy Analysis
+            </Link>
+            <Link to="/economics" className="text-slate-400 hover:text-white transition-colors">
+              Economic Analysis
+            </Link>
+          </div>
         </div>
       </header>
 
@@ -308,18 +315,14 @@ export function SourcesPage() {
           </p>
 
           {/* Summary Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+          <div className="grid grid-cols-3 gap-4 mb-12">
             <div className="bg-green-500/10 border border-green-500/30 rounded-lg p-4 text-center">
-              <div className="text-2xl font-bold text-green-400">18</div>
-              <div className="text-sm text-green-300">High Confidence</div>
-            </div>
-            <div className="bg-blue-500/10 border border-blue-500/30 rounded-lg p-4 text-center">
-              <div className="text-2xl font-bold text-blue-400">3</div>
-              <div className="text-sm text-blue-300">Medium Confidence</div>
+              <div className="text-2xl font-bold text-green-400">21</div>
+              <div className="text-sm text-green-300">Verified Claims</div>
             </div>
             <div className="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-4 text-center">
               <div className="text-2xl font-bold text-yellow-400">1</div>
-              <div className="text-sm text-yellow-300">Estimates</div>
+              <div className="text-sm text-yellow-300">Estimate</div>
             </div>
             <div className="bg-purple-500/10 border border-purple-500/30 rounded-lg p-4 text-center">
               <div className="text-2xl font-bold text-purple-400">3</div>

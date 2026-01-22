@@ -14,8 +14,24 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4">Documentation</h4>
+            <h4 className="text-lg font-semibold mb-4">Analysis</h4>
             <ul className="space-y-2 text-sm">
+              <li>
+                <Link
+                  to="/policy"
+                  className="text-slate-400 hover:text-white transition-colors"
+                >
+                  Policy Analysis
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/economics"
+                  className="text-slate-400 hover:text-white transition-colors"
+                >
+                  Economic Analysis
+                </Link>
+              </li>
               <li>
                 <Link
                   to="/sources"
