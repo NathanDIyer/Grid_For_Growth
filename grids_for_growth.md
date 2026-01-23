@@ -46,7 +46,13 @@ So the conservative path always looks defensible in the moment. The ambitious pa
 
 Liberalized electricity markets compound this. These markets are designed to eliminate excess capacity. The marginal generator, by definition, earns no profit. The missing money problem pushes systems toward the edge of reliability constraints. Capacity markets patch this by paying generators to be available during peaks, but the overall structure still rewards running tight. That made sense when load wasn't growing. Excess capacity was waste. But when load is growing, a tight system becomes a trap.
 
-We're not building transmission like it's 50-year infrastructure. We're building it like it's 10-year infrastructure, and even pushing to 20 years has been a hard sell. The result is a system that's reactive rather than proactive. We're rationing access to the grid we have rather than building for the grid we need.
+We're not building transmission like it's 50-year infrastructure. We're building it like it's 10-year infrastructure. FERC Order 1920, issued in May 2024, finally pushed the planning horizon to 20 years—requiring transmission providers to develop long-term scenarios and reassess them every five years. That's real progress.
+
+Here's where cost of capital becomes crucial. At 8% private rates, you genuinely shouldn't overbuild—the carrying costs on unused capacity are punishing. Building for 20 years of demand upfront doesn't make economic sense at those rates. But this is exactly where preparation becomes so valuable. You can build for 5 or 10 years of actual demand while making the infrastructure *ready* for 20, 30, even 50 years of growth. Towers rated for higher voltage. Rights-of-way sized for double circuits. Breakers that can handle reconductoring. You're not overbuilding—you're building smaller for the near-term ask while preserving an 8× expansion pathway.
+
+Order 1920's 20-year planning horizon and the preparation delta work together. Plan for the long term, build for the near term, but prepare the infrastructure to grow. If federal capital at 2% were available, you could just build big from the start—that's the ideal scenario where carrying costs are negligible. But even at private capital costs, preparation is the bridge that makes long-term planning economically rational.
+
+The problem is we're not doing either. We're not building big, and we're not preparing for expansion. The result is a system that's reactive rather than proactive. We're rationing access to the grid we have rather than building for the grid we need.
 
 ## The Reactive Trap
 

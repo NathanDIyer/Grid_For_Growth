@@ -41,28 +41,50 @@ export function Chapter1Problem() {
             <h3 className="section-headline">
               The Planning Horizon Gap
             </h3>
+            <p className="section-body mb-4">
+              FERC Order 1920, issued in May 2024, pushed the planning horizon to 20 years—a
+              real step forward. But private utilities still finance at 8% cost of capital.
+              At those rates, building for 20 years of demand upfront doesn't make economic
+              sense—the carrying costs on unused capacity are punishing.
+            </p>
             <p className="section-body">
-              Private utilities plan on 5-10 year horizons with 8% cost of capital.
-              At these rates, future costs are heavily discounted, making "wait and see"
-              appear rational. But the federal government can borrow at 2% over 50+ year
-              horizons. This fundamental difference in time preference changes everything
-              about optimal infrastructure investment.
+              The federal government can borrow at 2% over 50+ year horizons. This fundamental
+              difference in time preference changes everything about optimal infrastructure
+              investment. The question isn't whether to plan long-term—it's how to finance
+              building for it.
             </p>
           </ScrollReveal>
         </div>
 
         {/* Comparison boxes */}
         <ScrollReveal delay={0.1}>
-          <div className="grid md:grid-cols-2 gap-6 mb-20">
-            <div className="bg-congestion-50 rounded-2xl p-8 border border-congestion-200">
-              <div className="text-congestion font-semibold text-sm uppercase tracking-wider mb-3">
-                Private Utility
+          <div className="grid md:grid-cols-3 gap-6 mb-20">
+            <div className="bg-amber-50 rounded-2xl p-8 border border-amber-200">
+              <div className="text-amber-700 font-semibold text-sm uppercase tracking-wider mb-3">
+                Order 1920 Planning
               </div>
-              <div className="text-3xl font-bold text-congestion mb-2">
-                5-10 years
+              <div className="text-3xl font-bold text-amber-600 mb-2">
+                20 years
               </div>
               <div className="text-slate-600">
-                Planning horizon at 8% cost of capital
+                Required planning horizon
+              </div>
+              <div className="mt-4 pt-4 border-t border-amber-200">
+                <div className="text-slate-500 text-sm">
+                  Real progress on long-term thinking
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-congestion-50 rounded-2xl p-8 border border-congestion-200">
+              <div className="text-congestion font-semibold text-sm uppercase tracking-wider mb-3">
+                Private Financing
+              </div>
+              <div className="text-3xl font-bold text-congestion mb-2">
+                8% rates
+              </div>
+              <div className="text-slate-600">
+                Makes overbuilding punishing
               </div>
               <div className="mt-4 pt-4 border-t border-congestion-200">
                 <div className="text-slate-500 text-sm">
@@ -73,13 +95,13 @@ export function Chapter1Problem() {
 
             <div className="bg-electric-50 rounded-2xl p-8 border border-electric-200">
               <div className="text-electric font-semibold text-sm uppercase tracking-wider mb-3">
-                Federal Government
+                Federal Capital
               </div>
               <div className="text-3xl font-bold text-electric mb-2">
-                50+ years
+                2% rates
               </div>
               <div className="text-slate-600">
-                Planning horizon at 2% cost of capital
+                Makes building big optimal
               </div>
               <div className="mt-4 pt-4 border-t border-electric-200">
                 <div className="text-slate-500 text-sm">

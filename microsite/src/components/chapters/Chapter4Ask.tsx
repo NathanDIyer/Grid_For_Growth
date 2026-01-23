@@ -12,8 +12,8 @@ const leveragePoints = [
   {
     number: '02',
     title: 'Preparation Delta',
-    description: 'Pay the 10-25% premium to build expansion-ready: oversized foundations, stronger towers, extra substation bays. When growth comes, you expand at a fraction of the cost.',
-    insight: 'Full preparation enables 8× capacity growth at 80% lower lifecycle cost per MW.',
+    description: 'At 8% rates, you shouldn\'t overbuild—but you can build smaller for near-term demand while preparing for 8× growth. Towers rated for higher voltage, ROW sized for double circuits, breakers ready for reconductoring.',
+    insight: 'Order 1920\'s 20-year planning + preparation = long-term thinking without overbuilding today.',
     color: 'transmission'
   },
   {
@@ -26,7 +26,7 @@ const leveragePoints = [
   {
     number: '04',
     title: 'Long Time Horizons',
-    description: "Plan for 40-50 years. This is multi-generational infrastructure. Short-term thinking leads to cascading upgrades that cost 4-5× what right-sized investment would have required.",
+    description: "FERC Order 1920 requires 20-year planning—that's progress. Preparation bridges the gap to 50-year infrastructure lifetimes. Federal capital at 2% would let us build big from the start, but even at private rates, preparation makes long-term planning economically rational.",
     insight: 'The entity with the longest time horizon should hold the infrastructure risk.',
     color: 'slate'
   }

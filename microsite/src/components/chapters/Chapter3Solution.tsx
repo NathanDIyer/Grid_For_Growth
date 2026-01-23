@@ -61,11 +61,17 @@ export function Chapter3Solution() {
             <h3 className="section-headline">
               The Preparation Delta
             </h3>
+            <p className="section-body mb-4">
+              Here's the key insight: at 8% cost of capital, you genuinely shouldn't overbuild—the
+              carrying costs are punishing. But this is exactly where preparation becomes so valuable.
+              You can build for 5 or 10 years of actual demand while making the infrastructure <em>ready</em> for
+              20, 30, even 50 years of growth.
+            </p>
             <p className="section-body">
-              The most powerful lever: fund the 25% premium to build transmission
-              infrastructure that's ready for future expansion. This means oversized
-              rights-of-way, stronger foundations, and modular designs. When demand
-              arrives, adding capacity costs a fraction of building from scratch.
+              FERC Order 1920's 20-year planning horizon and the preparation delta work together.
+              Plan for the long term, build for the near term, but prepare the infrastructure to grow.
+              Towers rated for higher voltage. Rights-of-way sized for double circuits. Breakers that
+              can handle reconductoring. You're not overbuilding—you're preserving an 8× expansion pathway.
             </p>
           </ScrollReveal>
         </div>
@@ -86,6 +92,35 @@ export function Chapter3Solution() {
             label="Reduction in cost per MW with full preparation"
             color="grid"
           />
+        </ScrollReveal>
+
+        {/* The bridge callout */}
+        <ScrollReveal>
+          <div className="my-12 bg-gradient-to-r from-electric-50 to-transmission-50 rounded-2xl p-8 border border-electric-200">
+            <div className="flex flex-col md:flex-row items-start gap-6">
+              <div className="flex-shrink-0">
+                <div className="w-16 h-16 bg-electric rounded-full flex items-center justify-center">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <h4 className="text-lg font-semibold text-slate-900 mb-2">
+                  Preparation Is the Bridge
+                </h4>
+                <p className="text-slate-700 mb-3">
+                  If federal capital at 2% were available, you could just build big from the start—that's
+                  the ideal scenario where carrying costs are negligible. But even at private capital costs,
+                  preparation is the bridge that makes long-term planning economically rational.
+                </p>
+                <p className="text-slate-600 text-sm">
+                  The problem today? We're doing neither. We're not building big, and we're not preparing
+                  for expansion. That's what needs to change.
+                </p>
+              </div>
+            </div>
+          </div>
         </ScrollReveal>
 
         {/* Regional Planning section */}

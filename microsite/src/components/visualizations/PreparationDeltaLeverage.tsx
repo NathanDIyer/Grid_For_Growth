@@ -11,24 +11,24 @@ const expansionSteps = [
     textColor: 'text-slate-700'
   },
   {
-    label: '+ Double Circuit',
-    description: 'Add second circuit to same towers',
+    label: '+ Voltage Upgrade',
+    description: 'Upgrade to 500kV (towers ready)',
     multiplier: '2×',
     capacity: '800 MW',
     color: 'bg-transmission',
     textColor: 'text-transmission'
   },
   {
-    label: '+ Reconductoring',
-    description: 'Advanced conductors double current',
+    label: '+ Double Circuit',
+    description: 'Add second circuit to same towers',
     multiplier: '2×',
     capacity: '1,600 MW',
     color: 'bg-electric',
     textColor: 'text-electric'
   },
   {
-    label: '+ Voltage Upgrade',
-    description: 'Upgrade to 500kV (towers ready)',
+    label: '+ Reconductoring',
+    description: 'Advanced conductors double current',
     multiplier: '2×',
     capacity: '3,200 MW',
     color: 'bg-grid',
