@@ -26,7 +26,7 @@ export function Header() {
     >
       <div className="max-w-content mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#" className="text-xl font-bold text-slate-900">
-          Grids for Growth
+          Grid for Growth
         </a>
 
         <nav className="hidden md:flex items-center gap-8">

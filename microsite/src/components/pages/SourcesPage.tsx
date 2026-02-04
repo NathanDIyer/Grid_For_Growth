@@ -294,7 +294,7 @@ export function SourcesPage() {
       <header className="bg-slate-900/95 backdrop-blur-sm border-b border-slate-800 sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link to="/" className="text-xl font-bold text-white hover:text-electric-400 transition-colors">
-            ← Grids for Growth
+            ← Grid for Growth
           </Link>
           <div className="flex gap-4 text-sm">
             <Link to="/policy" className="text-slate-400 hover:text-white transition-colors">
@@ -425,7 +425,7 @@ export function SourcesPage() {
       <footer className="bg-slate-900 border-t border-slate-800 py-8 px-6">
         <div className="max-w-6xl mx-auto text-center text-slate-500 text-sm">
           <Link to="/" className="text-electric-400 hover:text-electric-300 transition-colors">
-            ← Back to Grids for Growth
+            ← Back to Grid for Growth
           </Link>
         </div>
       </footer>

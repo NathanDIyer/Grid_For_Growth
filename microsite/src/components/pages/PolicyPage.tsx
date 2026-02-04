@@ -24,7 +24,7 @@ export function PolicyPage() {
       <header className="bg-slate-900/95 backdrop-blur-sm border-b border-slate-800 sticky top-0 z-50">
         <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link to="/" className="text-xl font-bold text-white hover:text-electric-400 transition-colors">
-            ← Grids for Growth
+            ← Grid for Growth
           </Link>
           <div className="flex gap-4 text-sm">
             <Link to="/economics" className="text-slate-400 hover:text-white transition-colors">
@@ -222,7 +222,7 @@ export function PolicyPage() {
 
           <Section title="Siting and Landowner Compensation">
             <p className="text-slate-300 leading-relaxed mb-4">
-              A Grids for Growth agenda has to include siting reform. Cheap capital doesn't help if you can't permit lines. But the economics of larger lines actually help here.
+              A Grid for Growth agenda has to include siting reform. Cheap capital doesn't help if you can't permit lines. But the economics of larger lines actually help here.
             </p>
             <p className="text-slate-300 leading-relaxed mb-4">
               Bigger lines move dramatically more value over approximately the same land footprint. A 500 kV line doesn't require twice the right-of-way of a 345 kV line, but it carries roughly twice the power. A 765 kV line carries roughly six times the power of a 345 kV line on a modestly wider corridor.
@@ -261,7 +261,7 @@ export function PolicyPage() {
               If we build big and demand falls short, we have some underutilized infrastructure. If we build small and demand exceeds projections, we choke off economic growth, delay decarbonization, and pay multiples of what right-sized investment would have cost. The costs of underbuilding aren't hypothetical. They're visible right now in interconnection queues, in withdrawn projects, in factories that located elsewhere, in the developers who have been screaming about this for a decade.
             </p>
             <p className="text-slate-300 leading-relaxed mb-4">
-              A Grids for Growth agenda would deploy cheap capital, fund preparation for expansion, provide grants to right-size critical infrastructure, reform siting through landowner compensation, and move from reactive to proactive planning. The goal is a system that rewards growth instead of punishing it, that invites economic development instead of rationing access, that builds for the grid we want rather than patching the grid we have.
+              A Grid for Growth agenda would deploy cheap capital, fund preparation for expansion, provide grants to right-size critical infrastructure, reform siting through landowner compensation, and move from reactive to proactive planning. The goal is a system that rewards growth instead of punishing it, that invites economic development instead of rationing access, that builds for the grid we want rather than patching the grid we have.
             </p>
             <p className="text-slate-300 leading-relaxed mb-4">
               The alternative is what we have now: random projects, short-term thinking, and the costs of growth forced onto whoever shows up last. That worked when demand was flat. It's failing now, and will fail harder as electrification accelerates.

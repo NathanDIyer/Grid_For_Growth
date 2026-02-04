@@ -6,7 +6,7 @@ export function Footer() {
       <div className="max-w-content mx-auto">
         <div className="grid md:grid-cols-3 gap-12">
           <div>
-            <h4 className="text-lg font-semibold mb-4">Grids for Growth</h4>
+            <h4 className="text-lg font-semibold mb-4">Grid for Growth</h4>
             <p className="text-slate-400 text-sm leading-relaxed">
               An economic analysis of proactive federal investment in electricity
               grid infrastructure.

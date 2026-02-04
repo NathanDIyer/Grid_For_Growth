@@ -9,7 +9,7 @@ This is a **policy analysis repository** with an interactive microsite. It conta
 ## Repository Structure
 
 ### Policy Documents (Root)
-- **grids_for_growth.md** - Main policy document presenting the narrative argument for federal grid investment
+- **grid_for_growth.md** - Main policy document presenting the narrative argument for federal grid investment
 - **grid_economics_analysis.md** - Quantitative analysis with formulas, calculations, and supporting data
 - **appendix_sources.md** - Sources and fact-checking documentation
 - **fig1-5 (PNG files)** - Static visualizations supporting the economic analysis
@@ -60,7 +60,7 @@ npm run preview  # Preview production build
 ## Working with These Documents
 
 When editing policy documents:
-- Maintain consistency between the narrative (grids_for_growth.md) and quantitative (grid_economics_analysis.md) documents
+- Maintain consistency between the narrative (grid_for_growth.md) and quantitative (grid_economics_analysis.md) documents
 - Figures are referenced by number in both documents - keep figure numbering synchronized
 - Economic formulas use standard NPV, discount rate, and power law notation
 

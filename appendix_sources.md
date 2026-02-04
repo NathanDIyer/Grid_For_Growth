@@ -1,6 +1,6 @@
 # Appendix: Sources and Fact-Check Results
 
-This appendix provides verification of key claims made in the Grids for Growth policy documents, with source links and accuracy assessments.
+This appendix provides verification of key claims made in the Grid for Growth policy documents, with source links and accuracy assessments.
 
 ---
 

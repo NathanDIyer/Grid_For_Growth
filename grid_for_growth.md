@@ -1,4 +1,4 @@
-# Grids for Growth
+# Grid for Growth
 
 ## Electricity Growth Used to Make Things Cheaper
 
@@ -110,7 +110,7 @@ Who do we want holding the risk if you're a little too aggressive? Who gets the 
 
 ## Siting and Landowner Compensation
 
-A Grids for Growth agenda has to include siting reform. Cheap capital doesn't help if you can't permit lines. But the economics of larger lines actually help here.
+A Grid for Growth agenda has to include siting reform. Cheap capital doesn't help if you can't permit lines. But the economics of larger lines actually help here.
 
 Bigger lines move dramatically more value over approximately the same land footprint. A 500 kV line doesn't require twice the right-of-way of a 345 kV line, but it carries roughly twice the power. A 765 kV line carries roughly six times the power of a 345 kV line on a modestly wider corridor.
 
@@ -136,7 +136,7 @@ All of this amounts to a bet: that America will need a grid two or three times i
 
 If we build big and demand falls short, we have some underutilized infrastructure. If we build small and demand exceeds projections, we choke off economic growth, delay decarbonization, and pay multiples of what right-sized investment would have cost. The costs of underbuilding aren't hypothetical. They're visible right now in interconnection queues, in withdrawn projects, in factories that located elsewhere, in the developers who have been screaming about this for a decade.
 
-A Grids for Growth agenda would deploy cheap capital, fund preparation for expansion, provide grants to right-size critical infrastructure, reform siting through landowner compensation, and move from reactive to proactive planning. The goal is a system that rewards growth instead of punishing it, that invites economic development instead of rationing access, that builds for the grid we want rather than patching the grid we have.
+A Grid for Growth agenda would deploy cheap capital, fund preparation for expansion, provide grants to right-size critical infrastructure, reform siting through landowner compensation, and move from reactive to proactive planning. The goal is a system that rewards growth instead of punishing it, that invites economic development instead of rationing access, that builds for the grid we want rather than patching the grid we have.
 
 The alternative is what we have now: random ass projects, short-term thinking, and the costs of growth forced onto whoever shows up last. That worked when demand was flat. It's failing now, and will fail harder as electrification accelerates.
 

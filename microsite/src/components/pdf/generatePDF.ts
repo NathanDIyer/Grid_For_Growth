@@ -21,7 +21,7 @@ export function generatePDF() {
   doc.setFontSize(24);
   doc.setTextColor(darkSlate);
   doc.setFont('helvetica', 'bold');
-  doc.text('Grids for Growth', margin, y);
+  doc.text('Grid for Growth', margin, y);
   y += 8;
 
   doc.setFontSize(14);
