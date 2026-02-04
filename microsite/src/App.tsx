@@ -35,7 +35,7 @@ function Hero() {
           transition={{ duration: 0.8, delay: 0.1 }}
           className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
         >
-          Grids for{' '}
+          Grid for{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-white to-blue-400">
             Growth
           </span>
